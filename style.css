@@ -1,0 +1,93 @@
+:root {
+    background-color: rgb(174,109,235);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+/* Divs Sections*/
+#gameContainer {
+    width: 100vw; 
+    height: 100vw; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto; 
+   background-color: rgb(174, 109, 235); 
+   outline: 2px solid black; 
+   min-height: 50px;
+
+}
+#gameContainer > *{
+    width: 100%
+}
+
+.answer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:40rem; 
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid blueviolet;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
+
+.flex-column{
+    display:flex; 
+    flex-direction: column;
+}
+.flex-center{
+    justify-content: center;
+    align-items: center
+}
+
+.hidden{
+    display:none; 
+}
+
+#question{
+    text-align: center;
+
+}
+
+#home {
+    background-color: rgb(174, 109, 235); 
+    outline: 2px solid blueviolet; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+ 
+ }
+
+ .bottom {
+    background-color: bisque; 
+    outline: 2px solid teal; 
+    min-height: 50px;
+ 
+ }
+ /* Button Styling*/
+ .btn{
+    font-size: 1.5rem;
+    padding:1rem;
+    width: 20rem; 
+    text-align: center;
+    border: 0.1rem solid blueviolet;
+    margin-bottom: 1rem; 
+    color: rgb(241, 159, 241);
+    background-color: white;
+
+ }
