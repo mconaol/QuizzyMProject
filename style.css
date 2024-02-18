@@ -20,7 +20,6 @@
     max-width: 80rem;
     margin: 0 auto; 
    background-color: rgb(174, 109, 235); 
-   outline: 2px solid black; 
    min-height: 50px;
 
 }
@@ -64,7 +63,6 @@
 
 #home {
     background-color: rgb(174, 109, 235); 
-    outline: 2px solid blueviolet; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,5 +87,6 @@
     margin-bottom: 1rem; 
     color: rgb(241, 159, 241);
     background-color: white;
+    border-radius: 20px;
 
  }
