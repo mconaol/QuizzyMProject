@@ -4,22 +4,26 @@ Financial Education Quiz Game
 Overview
 This project is a web-based quiz game designed for homeschooled kids aged 9 and up. The game aims to provide basic financial tips, teaching kids about budgeting, saving, and creditworthiness in a fun and interactive way.
 
+
+
 Technologies Used
 HTML
 CSS
 JavaScript
+
+
+
 Installation
 Clone the repository to your local machine:
 
-bash
-Copy code
 git clone https://github.com/your-username/financial-quiz-game.git
 Navigate to the project directory:
 
-bash
-Copy code
 cd financial-quiz-game
 Open the index.html file in your preferred web browser.
+
+
+
 
 How to Play
 Access the game through a local server or by opening the index.html file in your web browser.
