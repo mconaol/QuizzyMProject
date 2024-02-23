@@ -206,8 +206,8 @@ const budgetingQuestionaire = {
 
 }
 let currentQuestionIndex= 0;
-function startQuiz(){
-renderQuestion()};
+let score = 0; 
+
 
 function renderQuestion(questionObject) {
     console.log('question is rendering',questionObject)
@@ -240,10 +240,20 @@ function handleAnswer(questionId, isCorrect){
    gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[currentQuestionIndex]);
    }else{
 
+    // Add score and level
     gameContainer.innerHTML ="<h2>Quiz Completed! </h2>"
    }
 }
+
+function startQuiz(){
+    currentQuestionIndex= 0; 
+    score= 0;
+    renderQuestion();
+};
    
+startQuiz();
+
+
 
 function tearDownQuestions(){
     //Rem Event Listeners 
