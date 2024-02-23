@@ -42,6 +42,21 @@
 
 }
 
+.question-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:60rem; 
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: 0.1rem solid black;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
 
 .flex-column{
     display:flex; 
