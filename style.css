@@ -108,3 +108,11 @@
     border-radius: 20px;
 
  }
+
+ .correct{
+    background-color: rgb(136, 201, 136);
+ }
+
+ .incorrect{
+    background-color: rgb(189, 107, 107);
+ }

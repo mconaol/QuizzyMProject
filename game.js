@@ -208,49 +208,16 @@ const budgetingQuestionaire = {
 let currentQuestionIndex= 0;
 let score = 0; 
 
+function startQuiz(){
+    currentQuestionIndex= 0; 
+    score= 0;
+    renderQuestion(budgetingQuestionaire.questions[0]);
+};
 
-function renderQuestion(questionObject) {
-    console.log('question is rendering',questionObject)
-
-    const { id, question, answers } = questionObject;
-
-
-    const answerHTML = answers.map(answer => {
-        return `<div class="answer-container justify-center flex-column">
-        <p class="answer-option" onclick="handleAnswer(${id}, ${answer.correct})">${answer.choice}</p>
-    </div>`;
-    }).join('');
-    return `<div class="question-container justify-center flex-column">
-    <h2 class="question" id="question">${question}</h2>
-        ${answerHTML} </div>`;
- 
-}
 
 const gameContainer = document.getElementById('gameContainer');
 gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[0]);
 
-//Update Score
-function handleAnswer(questionId, isCorrect){
-    console.log('answer handled', questionId, isCorrect)
-   currentQuestionIndex++;
-
-   if(currentQuestionIndex<budgetingQuestionaire.questions.length){
-    
-    //Render Question
-   gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[currentQuestionIndex]);
-   }else{
-
-    // Add score and level
-    gameContainer.innerHTML ="<h2>Quiz Completed! </h2>"
-   }
-}
-
-function startQuiz(){
-    currentQuestionIndex= 0; 
-    score= 0;
-    renderQuestion();
-};
-   
 startQuiz();
 
 
@@ -258,6 +225,59 @@ startQuiz();
 function tearDownQuestions(){
     //Rem Event Listeners 
 }
+
+
+
+function renderQuestion(questionObject) {
+    if (!questionObject) {
+        return "<p>Quiz completed!</p>";
+    }
+
+    const { id, question, answers } = questionObject;
+
+    const answerHTML = answers.map((answer, index) => {
+        return `<div class="answer-container justify-center flex-column">
+            <p class="answer-option" data-index="${index}" data-correct="${answer.correct}" onclick="handleAnswer(${id}, ${index})">${answer.choice}</p>
+        </div>`;
+    }).join('');
+
+    return `<div class="question-container justify-center flex-column">
+        <h2 class="question" id="question">${question}</h2>
+        ${answerHTML}
+    </div>`;
+}
+
+function handleAnswer(questionId, selectedAnswerIndex) {
+    const selectedAnswer = budgetingQuestionaire.questions[questionId].answers[selectedAnswerIndex];
+    const isCorrect = selectedAnswer.correct;
+
+    // Highlight 
+    const selectedAnswerElement = document.querySelector(`[data-index="${selectedAnswerIndex}"]`);
+
+    if (isCorrect) {
+        selectedAnswerElement.classList.add("correct");
+        // Green Checkmark ADD
+    } else {
+        selectedAnswerElement.classList.add("incorrect");
+        // red X icon ADD
+    }
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < budgetingQuestionaire.questions.length) {
+        
+        setTimeout(() => {
+            gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[currentQuestionIndex]);
+        }, 1000);
+    } else {
+        // Add score and level
+        setTimeout(() => {
+            gameContainer.innerHTML = "<h2>Quiz Completed! </h2>";
+        }, 1000);
+    }
+}
+
+
 
 
 
