@@ -11,7 +11,15 @@ HTML
 CSS
 JavaScript
 
+During the development of this project, I utilized various resources to enhance my knowledge and skills. Here's a list of the key resources I referred to:
 
+  - AI Coder assisted in revision of syntax.
+
+- YouTube Tutorials:
+  - [GreatStack](https://www.youtube.com/user/GreatStack) - GreatStack's tutorials were helpful in understanding score keeping.
+  - [Giraffe Academy](https://www.youtube.com/user/djdubbya) - Giraffe Academy provided insightful tutorials on score keeping and event listeners.
+
+These resources have greatly contributed to the development process, and I am grateful for the knowledge and insights they provided.
 
 Installation
 Clone the repository to your local machine:
@@ -34,12 +42,11 @@ Learn financial tips in an engaging and interactive manner.
 Dependencies
 There are no external dependencies for this project. The game can be run with a modern web browser.
 
-Usage Examples
-*******
-
 
 Contributing
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
+
+
 
 License
 This project is licensed under the MIT License.

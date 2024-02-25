@@ -1,225 +1,210 @@
-
-const budgetingQuestionaire = {
-    title: 'Budgeting Quiz',
+const savingsQuestionaire = {
+    title: 'Savings Quiz',
     questions: [
         {
             id: 0,
-            question: 'What is the purpose of a personal budget?',
+            question: 'What is the purpose of the "pay yourself first" strategy? ',
             answers: [
                 {
-                    choice: 'a) To figure out how much you earn',
+                    choice: 'a) Treating yourself to a shopping spree.',
                     correct: false,
                 },
                 {
-                    choice: 'b) To figure out how much you spend',
-                    correct: false,
-                },
-                {
-                    choice: 'c) Both of the above',
+                    choice: 'b) Prioritizing saving by setting aside money before paying bills.',
                     correct: true,
+                },
+                {
+                    choice: 'c) Investing in the latest technology',
+                    correct: false,
                 }
 
             ]
         },
         {
             id: 1,
-            question: 'At what age do most Americans first begin thinking about saving for retirement?',
+            question: 'Which of the following is a key benefit of setting specific savings goals?',
             answers: [
                 {
-                    choice: 'a) 30 years old',
+                    choice: 'a) It only benefits adults.',
                     correct: false,
                 },
                 {
-                    choice: 'b) 40 years old',
+                    choice: 'b) It helps track progress and stay motivated.',
                     correct: true,
                 },
                 {
-                    choice: 'c) 50 years old',
+                    choice: 'c) It restricts you from having fun.',
                     correct: false,
                 }
             ]
         },
         {
             id: 2,
-            question: 'What is the average age that working Americans think they will retire?',
+            question: 'True or False: Saving small amounts regularly does not make a significant impact.',
             answers: [
                 {
-                    choice: 'a) 60 years old',
+                    choice: 'TRUE',
                     correct: false,
                 },
                 {
-                    choice: 'b) 65 years old',
+                    choice: 'FALSE',
                     correct: true,
                 },
-                {
-                    choice: 'c) 70 years old',
-                    correct: false,
-                }
+                
             ]
         },
         {
             id: 3,
-            question: 'What two categories should you divide your spending into?',
+            question: 'What is the purpose of a sinking fund in saving? ',
             answers: [
                 {
-                    choice: 'a) Fixed and discretionary spending',
+                    choice: 'a) Saving for daily expenses.',
+                    correct: false,
+                },
+                {
+                    choice: 'b) Investing in high-risk stocks. ',
+                    correct: false,
+                },
+                {
+                    choice: 'c) Setting aside money for predictable, non-monthly expenses. ',
                     correct: true,
-                },
-                {
-                    choice: 'b) Essential and miscellaneous spending',
-                    correct: false,
-                },
-                {
-                    choice: 'c) Priority and secondary spending',
-                    correct: false,
                 }
             ]
         },
         {
             id: 4,
-            question: 'The goal of a good budget plan is to save ____ percent of your earnings each month.',
+            question: 'True or False: Saving money means you cannot enjoy fun activities or treat yourself occasionally.',
             answers: [
                 {
-                    choice: 'a) 5',
+                    choice: 'TRUE',
                     correct: false,
                 },
                 {
-                    choice: 'b) 10',
+                    choice: 'FALSE',
                     correct: true,
                 },
-                {
-                    choice: 'c) 15',
-                    correct: false,
-                }
+                
             ]
         },
         {
             id: 5,
-            question: 'How can you stay on track with your new personal budget?',
+            question: 'What is the "latte factor" in saving? ',
             answers: [
                 {
-                    choice: 'a) Keep track of all your receipts',
+                    choice: 'a) Investing in expensive coffee brands.',
                     correct: false,
                 },
                 {
-                    choice: 'b) Write down all your expenses in a notebook',
+                    choice: 'b) Only buying lattes and avoiding other beverages.',
                     correct: false,
                 },
                 {
-                    choice: 'c) Both of the above',
+                    choice: 'c) Cutting back on daily coffee purchases to save money. ',
                     correct: true,
                 }
             ]
         },
         {
             id: 6,
-            question: 'How often should you review your budget goals?',
+            question: 'What does the acronym SMART stand for in the context of setting savings goals? ',
             answers: [
                 {
-                    choice: 'a) Every month',
+                    choice: 'a) Simple, Manageable, Achievable, Realistic, Time-bound',
                     correct: true,
                 },
                 {
-                    choice: 'b) Every few months',
+                    choice: 'b) Spend More, Achieve Results Today.',
                     correct: false,
                 },
                 {
-                    choice: 'c) Every year',
+                    choice: 'c) Super, Magical, Amazing, Rewarding, Timeless',
                     correct: false,
                 }
             ]
         },
         {
             id: 7,
-            question: 'What is an emergency fund?',
+            question: 'True or False: It is better to save money in a piggy bank at home than in a bank account.',
             answers: [
                 {
-                    choice: 'a) Funding for the local fire hydrant',
+                    choice: 'TRUE',
                     correct: false,
                 },
                 {
-                    choice: 'b) Money set aside for eating out.',
-                    correct: false,
-                },
-                {
-                    choice: 'c) Savings for unexpected health and/or necessities expenses.',
+                    choice: 'FALSE',
                     correct: true,
-                }
+                },
             ]
         },
         {
             id: 8,
-            question: 'What is the 50/30/20 rule in budgeting? ',
+            question: 'How does the concept of "delayed gratification" relate to saving?',
             answers: [
                 {
-                    choice: 'a) A guideline for distributing income: 50% needs, 30% wants, 20% savings.',
-                    correct: true,
-                },
-                {
-                    choice: 'b) The recommended amount of money to spend on luxury items.',
+                    choice: 'a)Spending money immediately without waiting.',
                     correct: false,
                 },
                 {
-                    choice: 'c)  A rule only applicable to adults',
+                    choice: 'b) Postponing spending to achieve long-term goals.',
+                    correct: true,
+                },
+                {
+                    choice: 'c)  Instantly rewarding oneself with purchases.',
                     correct: false,
                 }
             ]
         },
         {
             id: 9,
-            question: 'When creating a budget, what does the term "cash flow" refer to?',
+            question: 'What is the importance of regularly reviewing and adjusting your savings plan?',
             answers: [
                 {
-                    choice: 'a) The physical flow of cash in and out of your wallet.',
-                    correct: false,
-                },
-                {
-                    choice: 'b) The movement of money into and out of your bank account.',
+                    choice: 'a) It helps adapt to changes in financial goals and circumstances.',
                     correct: true,
                 },
                 {
-                    choice: 'c) The speed at which you spend money.',
+                    choice: 'b) It ensures you never spend money on fun activities.',
+                    correct: false,
+                },
+                {
+                    choice: 'c) It is unnecessary, as saving plans never need adjustment',
                     correct: false,
                 }
             ]
         },
         {
             id: 10,
-            question: 'What is the purpose of an envelope system in budgeting?',
+            question: 'True or False: Saving for retirement is not something teenagers need to worry about.',
             answers: [
                 {
-                    choice: 'a) To organize and store receipts.',
+                    choice: 'TRUE',
                     correct: false,
                 },
                 {
-                    choice: 'b) To allocate cash for specific spending categories. ',
+                    choice: 'FALSE',
                     correct: true,
                 },
-                {
-                    choice: 'c) To keep extra money hidden away.',
-                    correct: false,
-                }
             ]
         }
 
     ]
 
 }
+
 let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    renderQuestion(budgetingQuestionaire.questions[0]);
+    renderQuestion(savingsQuestionaire.questions[0]);
 };
 
 
 const gameContainer = document.getElementById('gameContainer');
-gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[0]);
+gameContainer.innerHTML = renderQuestion(savingsQuestionaire.questions[0]);
 
 startQuiz();
-
 
 function renderQuestion(questionObject) {
     if (!questionObject) {
@@ -240,8 +225,9 @@ function renderQuestion(questionObject) {
     </div>`;
 }
 
+
 function handleAnswer(questionId, selectedAnswerIndex) {
-    const selectedAnswer = budgetingQuestionaire.questions[questionId].answers[selectedAnswerIndex];
+    const selectedAnswer = savingsQuestionaire.questions[questionId].answers[selectedAnswerIndex];
     const isCorrect = selectedAnswer.correct;
 
     // Highlight 
@@ -259,22 +245,17 @@ function handleAnswer(questionId, selectedAnswerIndex) {
 
     currentQuestionIndex++;
 
-    if (currentQuestionIndex < budgetingQuestionaire.questions.length) {
+    if (currentQuestionIndex < savingsQuestionaire.questions.length) {
 
         setTimeout(() => {
-            gameContainer.innerHTML = renderQuestion(budgetingQuestionaire.questions[currentQuestionIndex]);
+            gameContainer.innerHTML = renderQuestion(savingsQuestionaire.questions[currentQuestionIndex]);
         }, 1000);
     } else {
         // Add score and level
         setTimeout(() => {
             const resultHTML = `<h2>Quiz Completed!</h2>
-             Your Score: ${score} out of ${budgetingQuestionaire.questions.length}.`;
+             Your Score: ${score} out of ${savingsQuestionaire.questions.length}.`;
             gameContainer.innerHTML = resultHTML;
         }, 1000);
     }
 }
-
-
-
-
-
