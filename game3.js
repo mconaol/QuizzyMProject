@@ -203,7 +203,8 @@ startQuiz();
 
 function renderQuestion(questionObject) {
     if (!questionObject) {
-        return "<p>Quiz completed!</p>";
+        return `<div class="gameContainer justify-center flex-column">
+        <p> You have completed the quiz!</p></div>`;
     }
 
     const { id, question, answers } = questionObject;
@@ -248,8 +249,9 @@ function handleAnswer(questionId, selectedAnswerIndex) {
     } else {
         // Add score and level
         setTimeout(() => {
-            const resultHTML = `<h2>Quiz Completed!</h2>
-             Your Score: ${score} out of ${creditQuestionaire.questions.length}.`;
+            const resultHTML = `<div class="question-container justify-center flex-column">
+            <p> You have completed the quiz!</p>
+             Your Score: ${score} out of ${creditQuestionaire.questions.length}.</div>`;
             gameContainer.innerHTML = resultHTML;
         }, 1000);
     }

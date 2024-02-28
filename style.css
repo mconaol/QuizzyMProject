@@ -1,5 +1,5 @@
 :root {
-    background-color: rgb(174,109,235);
+    background-color: rgb(192, 143, 192);
 }
 
 *{
@@ -19,7 +19,7 @@
     align-items: center;
     max-width: 80rem;
     margin: 0 auto; 
-   background-color: rgb(174, 109, 235); 
+   background-color:rgb(192, 143, 192); 
    min-height: 50px;
 
 }
@@ -54,7 +54,7 @@
     border: 0.1rem solid black;
     color: black;
     background-color: white;
-    padding: 1rem;
+    padding: 5rem;
     border-radius: 20px;
     cursor: pointer;
 
@@ -80,7 +80,7 @@
 }
 
 #home {
-    background-color: rgb(174, 109, 235); 
+    background-color: rgb(192, 143, 192); 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,7 +103,7 @@
     text-align: center;
     border: 0.1rem solid blueviolet;
     margin-bottom: 1rem; 
-    color: rgb(241, 159, 241);
+    color: rgb(54, 20, 54);
     background-color: white;
     border-radius: 20px;
 
@@ -116,3 +116,4 @@
  .incorrect{
     background-color: rgb(189, 107, 107);
  }
+
