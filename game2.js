@@ -254,23 +254,24 @@ function handleAnswer(questionId, selectedAnswerIndex) {
     } else {
         // Add score and level
         setTimeout(() => {
+            let resultLevel;
+
+            if (score >= 9) {
+                resultLevel = "Expert";
+            } else if (score >= 7) {
+                resultLevel = "In the Know";
+            } else {
+                resultLevel = "Try Again";
+            }
+
             const resultHTML = `<div class="question-container justify-center flex-column">
             <p> You have completed the quiz!</p>
-             Your Score: ${score} out of ${savingsQuestionaire.questions.length}.</div>`;
+            <br>
+            <p>Your Score: ${score} out of ${savingsQuestionaire.questions.length}.</p>
+            <br>
+            <p>Result Level: ${resultLevel}</p></div>`;
             gameContainer.innerHTML = resultHTML;
         }, 1000);
     }
 }
 
-function resultLevel(score){
-    let gameContainer = document.getElementById("gameContainer");
-
-    if (score === 10) {
-        gameContainer.innerHTML = "<p>Congratulations! You pass! </p>";
-    } else if (score =>7) {
-        gameContainer.innerHTML = `<p>You got ${score} questions right. Keep it up!</p>`;
-    } else {
-        gameContainer.innerHTML = "<p>Oops! You didn't get enough questions right. Try again!</p>";
-    } 
-
-}

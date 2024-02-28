@@ -249,9 +249,22 @@ function handleAnswer(questionId, selectedAnswerIndex) {
     } else {
         // Add score and level
         setTimeout(() => {
+            let resultLevel;
+
+            if (score >= 9) {
+                resultLevel = "Expert";
+            } else if (score >= 7) {
+                resultLevel = "In the Know";
+            } else {
+                resultLevel = "Try Again";
+            }
+
             const resultHTML = `<div class="question-container justify-center flex-column">
             <p> You have completed the quiz!</p>
-             Your Score: ${score} out of ${creditQuestionaire.questions.length}.</div>`;
+            <br>
+            <p>Your Score: ${score} out of ${creditQuestionaire.questions.length}.</p>
+            <br>
+            <p>Result Level: ${resultLevel}</p></div>`;
             gameContainer.innerHTML = resultHTML;
         }, 1000);
     }
